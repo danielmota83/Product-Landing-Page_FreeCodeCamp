@@ -1,0 +1,141 @@
+body {
+    background-color: hsl(210, 45%, 60%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: hsl(203, 57%, 91%);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 550px;
+    position: relative;
+    top: 30px;
+    z-index: 0;
+    font-family: 'Pangolin', cursive; ;
+  }
+  
+  #header-img {
+    grid-column: 1;
+    width: 21%;
+    align-self: right;
+  }
+  
+  #nav-bar {
+    grid-column: 2;
+    align-self: center;
+    justify-self: right;
+    display: flex;
+    margin-right: 2px;
+  }
+  
+  .nav-link {
+    text-decoration: inherit;
+    color: inherit;
+    margin: 10px;
+  }
+  
+  #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #intro h2 {
+    color: aliceblue;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  #form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  
+  #features {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .feature-section {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+  }
+  
+  .feature-img {
+    width: 50%;
+    justify-self: center;
+    align-self: start;
+    margin-top: 25px;
+  }
+  
+  #products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-color: rgb(8, 49, 183);
+    border-width: 2px;
+    padding-bottom: 10px;
+  }
+  
+  .product-header {
+    margin-bottom: -20px;
+    text-align: center;
+  }
+  
+  .product-price {
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  .image-price{
+    display: flex;
+    width: 170px;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: hsl(45, 50%, 80%);
+    font-weight: bold;
+    border-radius: 6px;
+    height: 30px;
+    align-items: flex-end;
+    
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    animation-name: background-color;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+    background-color: rgb(220, 145, 65);
+  }
+  
+ 
